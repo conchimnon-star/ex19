@@ -1,0 +1,164 @@
+:root {
+    color-scheme: light;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #233044;
+    background: #f2f5f8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: min(1100px, calc(100% - 32px));
+    margin: 32px auto;
+}
+
+.page-header {
+    margin-bottom: 24px;
+    padding: 28px;
+    color: #fff;
+    background: #17324d;
+    border-radius: 10px;
+}
+
+.page-header h1 {
+    margin: 8px 0;
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+.page-header p {
+    margin-bottom: 0;
+}
+
+.eyebrow {
+    color: #c5d9ec;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+}
+
+.panel {
+    margin: 20px 0;
+    padding: 22px;
+    background: #fff;
+    border: 1px solid #dce3ea;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(23 50 77 / 5%);
+}
+
+h2 {
+    margin-top: 0;
+    color: #17324d;
+}
+
+.notice {
+    padding: 11px 14px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.notice + .notice {
+    margin-top: 8px;
+}
+
+.success {
+    color: #155724;
+    background: #e8f5eb;
+    border-color: #b7dfc0;
+}
+
+.info {
+    color: #174a70;
+    background: #eaf4fb;
+    border-color: #b8d9ef;
+}
+
+.error {
+    color: #842029;
+    background: #fbeaec;
+    border-color: #edc3c8;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 11px 12px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #dce3ea;
+}
+
+th {
+    color: #17324d;
+    background: #edf2f6;
+}
+
+.price {
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.product-form {
+    display: grid;
+    max-width: 620px;
+    gap: 9px;
+}
+
+.product-form label {
+    margin-top: 7px;
+    font-weight: 700;
+}
+
+.product-form label span {
+    color: #68798a;
+    font-weight: 400;
+}
+
+.product-form input,
+.product-form textarea {
+    width: 100%;
+    padding: 10px;
+    font: inherit;
+    border: 1px solid #aebdca;
+    border-radius: 4px;
+}
+
+.product-form button {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 10px 18px;
+    color: #fff;
+    font: inherit;
+    background: #205b88;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-form button:hover {
+    background: #173f60;
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: min(100% - 20px, 1100px);
+        margin: 10px auto;
+    }
+
+    .page-header,
+    .panel {
+        padding: 18px;
+    }
+}
